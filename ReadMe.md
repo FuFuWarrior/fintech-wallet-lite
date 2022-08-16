@@ -31,11 +31,11 @@ This create a user and account using this payload:
 {
   "first_name": "Wike",
   "last_name": "Atiku",
-  "email": string,
-  "dob": string,
-  "address": string,
-  "phone_number":string,
-  "bvn": string
+  "email": "string",
+  "dob":" string",
+  "address": "string",
+  "phone_number":"string",
+  "bvn": "string"
 }
 ```
 
@@ -52,7 +52,7 @@ On success it will return with this response
     "data": {
       "status": "success",
       "data":{
-        "token": string,
+        "token": "string",
         "message": "tier 3 account has been opened"
       }
     }
@@ -80,8 +80,8 @@ On success it will return with this response
 ``` json
 {
   "data":{
-    "status": 'success',
-    "message": 'your account has been funded'
+    "status":"success",
+    "message": "your account has been funded"
   }
 }
 ```
@@ -93,7 +93,7 @@ This allows the user to transfer fund from a account to another user's account
 ```json
 {
   "amount": 600,
-  "receiver_email: string
+  "receiver_email": "string"
 }
 ```
 On success it will return with this response
