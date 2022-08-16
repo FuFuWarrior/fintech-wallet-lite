@@ -1,0 +1,17 @@
+{
+   "validNubans": [
+        {
+            "account_name":"Chinedu Abubakar ",
+            "nuban": 2671536748
+        },
+        {
+            "account_name": "Wike Atiku",
+            "nuban": 1234567890
+
+        },
+        {
+            "account_name": "Tonye Okon",
+            "nuban": 2789917384
+        }
+    ]
+}
