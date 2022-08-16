@@ -1,6 +1,6 @@
 # Fintech App
-This is a fintech app built [Node.js](https://nodejs.org/en/download), [Express.js](http://expressjs.com/), [MySQL](https://dev.mysql.com/downloads/mysql/) and [paystack](https://paystack.com/)
 
+This is a fintech app built [Node.js](https://nodejs.org/en/download), [Express.js](http://expressjs.com/), [MySQL](https://dev.mysql.com/downloads/mysql/) and [paystack](https://paystack.com/)
 
 ## Getting Started
 
