@@ -1,5 +1,4 @@
 const jwt  = require('jsonwebtoken');
-require('dotenv').config()
 
 
 exports.verifyUser = (req, res, next) => {
