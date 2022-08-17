@@ -1,3 +1,4 @@
+const faker = require('faker')
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> } 
