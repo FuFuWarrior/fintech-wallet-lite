@@ -14,7 +14,7 @@
     await knex('users').insert([
         {
             id: 1,
-            first_name: faker.name.firstName() ,
+            first_name: faker.name.firstName(),
             last_name: faker.name.lastName(),
             email: 'email@email.com',
             dob: '1/2/2002',
