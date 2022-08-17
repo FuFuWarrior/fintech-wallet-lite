@@ -1,7 +1,7 @@
 const knex = require('../models/knex');
 const {body} = require('express-validator');
 const {creditAccount, debitAccount} = require('../utils/transactionUtils');
-
+// j
 
 exports.validate = (method) => {
     
@@ -24,7 +24,6 @@ exports.transfer = async (req, res) => {
         const senderAccount = await knex.select().from('accounts').innerJoin('account_types', 'accounts.account_type_id', 'account_types.id').where('accounts.id', account_id);
    
         const receiver = await knex.select().from('users').where('email', receiver_email);
-        console.log(receiver)
         
         if (receiver.length > 0){
             const receiverId = receiver[0].id;
