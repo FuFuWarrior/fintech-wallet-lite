@@ -79,10 +79,10 @@ exports.fundAccountWithCard = async (req, res) => {
             if (!creditResult.success) {
               await trx.rollback();
 
-              return {
-                success: false,
+              res.status(404).json( {
+                success: 'error',
                 error: creditResult.error,
-              };
+              });
             }
 
             await trx.commit();
@@ -111,7 +111,6 @@ exports.fundAccountWithCard = async (req, res) => {
         console.error(error, 'error')
 
         if (error.response){
-          console.error(error.response.data, 'error axios')
           return res.status(404).res.json({
             status : 'error',
             error: error.response.data.message

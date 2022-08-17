@@ -1,6 +1,6 @@
 # Fintech App
 
-This is a fintech app built [Node.js](https://nodejs.org/en/download), [Express.js](http://expressjs.com/), [MySQL](https://dev.mysql.com/downloads/mysql/) and [paystack](https://paystack.com/)
+This is a fintech app built using [Node.js](https://nodejs.org/en/download), [Express.js](http://expressjs.com/), [MySQL](https://dev.mysql.com/downloads/mysql/) and [paystack](https://paystack.com/).
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ This is a fintech app built [Node.js](https://nodejs.org/en/download), [Express.
 - PAYSTACK_SECRET_KEY=
 - TOKEN_SECRET=
 
-1. Run the migrations to create "data"base tables and seeding `account_types` table "data"base by running `npm run migrate:seed`.
+1. Run the migrations to create database tables and seeding `account_types` table "data"base by running `npm run migrate:seed`.
 2. You need would need to create a paystack account and copy the secret key on the dashboard.
 3. When running test through `npm test` make sure the save the token logged to the console, which would be used in the next test. Please note in the first test run not all test would pass.
 
@@ -63,7 +63,11 @@ On success it will return with this response
 
 ## Funding an Account
 
-This allow a user to fund the account using their debit card using `paystack` :
+This allow a user to fund the account using their  debit card using `paystack` :
+
+**NOTE**: *When trying to fund paystack url somtething give a connection error for some reason which lead to `500 error`. Please wait for some seconds and try again* 
+
+**THIS IS A TEST CARD PROVIDED BY PAYSTACK. IT IS NOT A REAL CARD**
 
 ```json
 {
@@ -88,7 +92,7 @@ On success it will return with this response
 
 ## Transfer Fund to Another User's Account
 
-This allows the user to transfer fund from a account to another user's account
+This allows the user to transfer fund from a account to another user's account using this payload:
 
 ```json
 {
@@ -109,7 +113,7 @@ On success it will return with this response
 
 ## Withdraw Fund
 
-This allows a users to withdraw fund.
+This allows a users to withdraw fund using this payload:.
 
 ```json
 {
