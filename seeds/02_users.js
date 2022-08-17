@@ -9,9 +9,9 @@ exports.seed = async function(knex) {
     await knex('users').insert([
         {
             id: 1,
-            first_name: 'Peter',
+            first_name: 'Tinubu',
             last_name: 'Obi',
-            email: 'peter@obi.com',
+            email: 'tinubu@obi.com',
             dob: '1/2/2002',
             address: 'no 2 okolathom lalou',
             phone_number: '4873992',
