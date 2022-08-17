@@ -1,4 +1,3 @@
-const {faker} = require('@faker-js/faker');
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> } 
@@ -15,13 +14,13 @@ const {faker} = require('@faker-js/faker');
     await knex('users').insert([
         {
             id: 1,
-            first_name: faker.name.firstName(),
-            last_name: faker.name.lastName(),
-            email: 'email@email.com',
+            first_name: 'Peter',
+            last_name: 'Obi',
+            email: 'peter@obi.com',
             dob: '1/2/2002',
             address: 'no 2 okolathom lalou',
-            phone_number: faker.random.numeric(11),
-            bvn: faker.random.numeric(11)
+            phone_number: '4873992',
+            bvn: '38374747384'
         },
     ]);
   };
