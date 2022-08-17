@@ -1,5 +1,5 @@
 const jwt  = require('jsonwebtoken');
-// dj
+
 
 exports.verifyUser = (req, res, next) => {
     const token = req.headers.authorization.split(' ')[1]; //! if the token has a Bearer as the prefix than use .split(' ')[1];
