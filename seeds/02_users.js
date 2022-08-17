@@ -16,32 +16,12 @@
             id: 1,
             first_name: faker.name.firstName(),
             last_name: faker.name.lastName(),
-            email: faker.internet.email( faker.name.firstName(), faker.name.lastName()),
-            dob: "1/2/2002",
-            address: "no 2 okolathom lalou",
+            email: 'email@email.com',
+            dob: '1/2/2002',
+            address: 'no 2 okolathom lalou',
             phone_number: faker.random.numeric(11),
             bvn: faker.random.numeric(11)
         },
-        {
-            id: 2,
-            first_name: faker.name.firstName(),
-            last_name: faker.name.lastName(),
-            email: faker.internet.email( faker.name.firstName(), faker.name.lastName()),
-            dob: "1/2/2002",
-            address: "no 2 okolathom lalou",
-            phone_number: faker.random.numeric(11),
-            bvn: faker.random.numeric(11)
-        },
-        {
-            id: 3,
-            first_name: faker.name.firstName(),
-            last_name: faker.name.lastName(),
-            email:  faker.internet.email( faker.name.firstName(), faker.name.lastName()),
-            dob: "1/2/2002",
-            address: "no 2 okolathom lalou",
-            phone_number: faker.random.numeric(11),
-            bvn: faker.random.numeric(11)
-        }
     ]);
   };
   
