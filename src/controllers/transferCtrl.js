@@ -24,10 +24,9 @@ exports.transfer = async (req, res) => {
         const senderAccount = await knex.select().from('accounts').innerJoin('account_types', 'accounts.account_type_id', 'account_types.id').where('accounts.id', account_id);
    
         const receiver = await knex.select().from('users').where('email', receiver_email);
-        const receiverId = receiver[0].id;
-
+        
         if (receiver.length > 0){
-            
+            const receiverId = receiver[0].id;
             const receiverAccount = await knex.select().from('accounts').where('account_holder', receiverId);
             // const receiverAccountType = await knex.select().from('account_types').where('id', receiverAccount[0].account_type );
 
