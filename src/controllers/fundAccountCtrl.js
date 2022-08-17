@@ -1,4 +1,5 @@
 const axios = require('axios').default
+require('dotenv').config()
 const knex = require('../models/knex');
 const {body} = require('express-validator');
 const {processInitialCardCharge} = require('../utils/cardUtils');
