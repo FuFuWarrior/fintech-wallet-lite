@@ -2,13 +2,8 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> } 
  */
- const firstName = faker.name.firstName();
- const lastName = faker.name.lastName();
- const email = faker.internet.email( firstName, lastName );
- const phoneNumber = faker.random.numeric(11);
- const bvn = faker.random.numeric(11);
 
- exports.seed = async function(knex) {
+exports.seed = async function(knex) {
     // Deletes ALL existing entries
     await knex('users').del()
     await knex('users').insert([
