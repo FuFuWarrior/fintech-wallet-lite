@@ -15,7 +15,7 @@ exports.seed = async function(knex) {
             dob: '1/2/2002',
             address: 'no 2 okolathom lalou',
             phone_number: '4873992',
-            bvn: '38374747384'
+            bvn: '38374747384',
         },
     ]);
   };
