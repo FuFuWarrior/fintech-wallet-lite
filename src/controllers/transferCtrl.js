@@ -1,7 +1,6 @@
 const knex = require('../models/knex');
 const {body} = require('express-validator');
 const {creditAccount, debitAccount} = require('../utils/transactionUtils');
-// j
 
 exports.validate = (method) => {
     
