@@ -6,7 +6,7 @@ This is a fintech app built using [Node.js](https://nodejs.org/en/download), [Ex
 
 1. You need to have [Node.js](https://nodejs.org/en/download) and [MySQL](https://dev.mysql.com/downloads/mysql/) installed. 
 2. Install project dependencies by running `npm install`.
-3. Create a `.env` file in the root directory and add your "data"bae details. It should have the following properties:
+3. Create a `.env` file in the root directory and add your "database" details. It should have the following properties:
 
 - DB_HOST=
 - DB_USERNAME=
